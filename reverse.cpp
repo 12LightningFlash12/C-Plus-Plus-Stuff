@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-  double number, reverse = 0;
+  int number, reverse = 0;
   
   cout<< "Enter a number: ";
   cin>> number >> endl;
