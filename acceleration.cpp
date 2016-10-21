@@ -13,5 +13,32 @@ int main(){
   cin >> ch;
   cout << "\n\n";
   
-  if( 
+  if(ch == 1){
+    cout << "running algorithm 1\n\n";
+    
+    cout << "Enter force: ";
+    cin >> force;
+    cout << "\n\n";
+    
+    cout << "Enter mass: ";
+    cin >> mass;
+    cout << "\n\n";
+    
+    if(mass <= 0){
+      cout << "YOU SHALL NOT PASS!\n";
+    } else {
+      accel = force / mass;
+      
+      cout << "Result" << accel << "m/s2\n\n" << endl;
+      
+      cout << "algorithum 1 completed\n\n\n";
+    }
+  } else if(ch == 2){
+    cout << "running algorithum 2\n\n";
+    
+    cout << "Enter the change in velocity: ";
+    cin >> cVel;
+    cout << "\n\n";
+    
+  }
 }
