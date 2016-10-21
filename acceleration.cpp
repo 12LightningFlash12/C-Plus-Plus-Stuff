@@ -26,19 +26,42 @@ int main(){
     
     if(mass <= 0){
       cout << "YOU SHALL NOT PASS!\n";
-    } else {
+    }else{
       accel = force / mass;
       
       cout << "Result" << accel << "m/s2\n\n" << endl;
       
       cout << "algorithum 1 completed\n\n\n";
     }
-  } else if(ch == 2){
+  }else if(ch == 2){
     cout << "running algorithum 2\n\n";
     
     cout << "Enter the change in velocity: ";
     cin >> cVel;
     cout << "\n\n";
     
+    cout << "Enter time: ";
+    cin >> time;
+    cout << "\n\n\n";
+    
+    if(time <= 0){
+      cout << "YOU SHALL NOT PASS!\n\n";
+    }else{
+      accel = cVel / time;
+      
+      cout << "Result: " << accel << "m/s2\n\n" << endl;
+      
+      cout << "algorithm 2 completed\n\n\n";
+    }
+  } else{
+    cout << " i do not reconize that command\n\n";
   }
+  
+  cout << "|---------------------------------|\n";
+  cout << "|Acceleration calculator completed|\n";
+  cout << "|---------------------------------|\n\n\n";
+  
+  cout <<  "press any key to exit...";
+  
+  return 0;
 }
